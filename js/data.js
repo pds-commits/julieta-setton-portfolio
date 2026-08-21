@@ -47,13 +47,9 @@ const PROYECTOS = [
     "portada": "proyectos/Proyecto_2/imagen_portada.jpg",
     "imagenes": [
       "proyectos/Proyecto_2/imagen_carousel_1.jpg",
-      "proyectos/Proyecto_2/imagen_carousel_1.svg",
       "proyectos/Proyecto_2/imagen_carousel_2.jpg",
-      "proyectos/Proyecto_2/imagen_carousel_2.svg",
       "proyectos/Proyecto_2/imagen_carousel_3.jpg",
-      "proyectos/Proyecto_2/imagen_carousel_3.svg",
       "proyectos/Proyecto_2/imagen_carousel_4.jpg",
-      "proyectos/Proyecto_2/imagen_carousel_4.svg",
       "proyectos/Proyecto_2/imagen_carousel_5.jpg",
       "proyectos/Proyecto_2/imagen_carousel_6.jpg",
       "proyectos/Proyecto_2/imagen_carousel_7.jpg",
@@ -97,12 +93,19 @@ const PROYECTOS = [
     "id": "proyecto-4",
     "titulo": "Proyecto 04",
     "categoria": "oficinas",
-    "portada": "proyectos/Proyecto_4/imagen_portada.svg",
+    "portada": "proyectos/Proyecto_4/imagen_portada.jpg",
     "imagenes": [
+      "proyectos/Proyecto_4/imagen_carousel_1.jpg",
       "proyectos/Proyecto_4/imagen_carousel_1.svg",
+      "proyectos/Proyecto_4/imagen_carousel_2.jpg",
       "proyectos/Proyecto_4/imagen_carousel_2.svg",
+      "proyectos/Proyecto_4/imagen_carousel_3.jpg",
       "proyectos/Proyecto_4/imagen_carousel_3.svg",
-      "proyectos/Proyecto_4/imagen_carousel_4.svg"
+      "proyectos/Proyecto_4/imagen_carousel_4.jpg",
+      "proyectos/Proyecto_4/imagen_carousel_4.svg",
+      "proyectos/Proyecto_4/imagen_carousel_5.jpg",
+      "proyectos/Proyecto_4/imagen_carousel_6.jpg",
+      "proyectos/Proyecto_4/imagen_carousel_7.jpg"
     ],
     "ficha": {
       "ubicacion": "Buenos Aires, Argentina",
