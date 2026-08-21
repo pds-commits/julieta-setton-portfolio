@@ -16,7 +16,7 @@ const PROYECTOS = [
     "id": "proyecto-1",
     "titulo": "Proyecto 01",
     "categoria": "residencial",
-    "portada": "proyectos/Proyecto_1/imagen_portada.svg",
+    "portada": "proyectos/Proyecto_1/imagen_portada.jpeg",
     "imagenes": [
       "proyectos/Proyecto_1/imagen_carousel_1.jpeg",
       "proyectos/Proyecto_1/imagen_carousel_2.jpeg",
@@ -28,7 +28,9 @@ const PROYECTOS = [
       "proyectos/Proyecto_1/imagen_carousel_8.jpeg",
       "proyectos/Proyecto_1/imagen_carousel_9.jpeg",
       "proyectos/Proyecto_1/imagen_carousel_10.jpeg",
-      "proyectos/Proyecto_1/imagen_carousel_11.jpeg"
+      "proyectos/Proyecto_1/imagen_carousel_11.jpeg",
+      "proyectos/Proyecto_1/imagen_carousel_12.png",
+      "proyectos/Proyecto_1/imagen_carousel_13.png"
     ],
     "ficha": {
       "ubicacion": "Buenos Aires, Argentina",
