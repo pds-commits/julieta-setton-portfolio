@@ -60,8 +60,9 @@ function crearCarrusel(proyecto) {
     });
 
     // Cada slide tiene su propio ancho (según la proporción de su
-    // imagen), así que para centrar la activa hay que sumar el ancho
-    // real de todas las anteriores en vez de asumir un paso fijo.
+    // imagen), así que para alinear la activa a la izquierda hay que
+    // sumar el ancho real de todas las anteriores en vez de asumir un
+    // paso fijo.
     let acumulado = 0;
     for (let i = 0; i < indice; i++) {
       const rect = slides[i].getBoundingClientRect();
@@ -70,13 +71,12 @@ function crearCarrusel(proyecto) {
         rect.width + parseFloat(estilo.marginLeft) + parseFloat(estilo.marginRight);
     }
 
-    const slideActual = slides[indice];
-    const anchoActual = slideActual.getBoundingClientRect().width;
-    const margenIzq = parseFloat(getComputedStyle(slideActual).marginLeft);
-    const anchoContenedor = wrapper.getBoundingClientRect().width;
-
-    const offset =
-      anchoContenedor / 2 - (acumulado + margenIzq + anchoActual / 2);
+    // La activa siempre queda pegada al borde izquierdo (el padding
+    // del contenedor la alinea con el título y la nav de abajo) en
+    // vez de centrada — así nunca queda un hueco en blanco cuando es
+    // la primera imagen.
+    const margenIzq = parseFloat(getComputedStyle(slides[indice]).marginLeft);
+    const offset = -(acumulado + margenIzq);
     track.style.transform = `translateX(${offset}px)`;
   }
 
