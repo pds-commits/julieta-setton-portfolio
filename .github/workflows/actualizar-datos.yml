@@ -1,0 +1,44 @@
+name: Actualizar datos del sitio
+
+# Cada vez que se suben fotos o se edita info.txt dentro de /proyectos,
+# regenera js/data.js y lo commitea. GitHub Pages sirve el repo
+# directamente desde la rama main, así que ese commit ya deja el
+# sitio actualizado (tarda 1-2 minutos en propagarse).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "proyectos/**"
+      - "scripts/generar-datos.mjs"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generar js/data.js desde /proyectos
+        run: node scripts/generar-datos.mjs
+
+      - name: Commitear js/data.js si cambió
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- js/data.js; then
+            git add js/data.js
+            git commit -m "chore: actualizar data.js desde /proyectos"
+            git push
+          else
+            echo "Sin cambios en js/data.js"
+          fi

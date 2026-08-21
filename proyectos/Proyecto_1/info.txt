@@ -1,0 +1,7 @@
+titulo: Proyecto 01
+categoria: residencial
+ubicacion: Buenos Aires, Argentina
+cliente: privado
+tipologia: vivienda unifamiliar
+superficie: 320 m²
+año: 2024

@@ -1,0 +1,7 @@
+titulo: Proyecto 05
+categoria: residencial
+ubicacion: Rosario, Argentina
+cliente: privado
+tipologia: vivienda unifamiliar
+superficie: 410 m²
+año: 2023

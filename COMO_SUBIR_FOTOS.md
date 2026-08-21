@@ -1,0 +1,70 @@
+# Cómo agregar o editar proyectos
+
+No hace falta saber programar ni pedirle nada a Pablo. Todo se hace desde
+github.com, desde el navegador.
+
+## Editar un proyecto que ya existe
+
+1. Entrá al repositorio en github.com y abrí la carpeta `proyectos`.
+2. Abrí la carpeta del proyecto que querés cambiar (ej: `Proyecto_1`).
+3. Para **agregar o reemplazar fotos**: botón "Add file" → "Upload files"
+   → arrastrá las fotos con el nombre correcto (ver más abajo) → botón
+   verde "Commit changes".
+4. Para **cambiar los datos** (ubicación, cliente, etc.): abrí el archivo
+   `info.txt` → ícono de lápiz (editar) → cambiá el texto → "Commit changes".
+5. Esperá 1 o 2 minutos y refrescá la página del sitio.
+
+## Agregar un proyecto nuevo
+
+1. Entrá a la carpeta `proyectos` → `_plantilla`.
+2. Copiá esa carpeta entera (podés descargarla y volver a subirla con
+   otro nombre, o simplemente crear una carpeta nueva a mano siguiendo
+   el mismo esquema).
+3. Renombrala con el nombre del proyecto nuevo, por ejemplo `Proyecto_6`
+   o `Casa_Rio` (el nombre de la carpeta no se muestra tal cual en el
+   sitio, así que podés usar el que te resulte más cómodo para
+   ordenarte).
+4. Subí las fotos y completá `info.txt` como se explica abajo.
+
+El **orden en que aparecen los proyectos en el home** sigue el orden
+alfabético/numérico de los nombres de carpeta — por eso conviene la
+convención `Proyecto_1`, `Proyecto_2`, `Proyecto_3`...
+
+## Nombres de archivo para las fotos
+
+| Archivo | Qué es |
+|---|---|
+| `imagen_portada.jpg` | La foto de tapa, la que se ve en el grid del home |
+| `imagen_carousel_1.jpg` | Primera foto del carrusel de detalle |
+| `imagen_carousel_2.jpg` | Segunda foto, y así siguiendo |
+
+Podés usar `.jpg`, `.jpeg`, `.png` o `.webp`. No hay límite de fotos en
+el carrusel, y no hace falta que sean todas cuadradas ni del mismo
+tamaño — cada una se muestra con su proporción real.
+
+## El archivo `info.txt`
+
+Es texto simple, una línea por dato:
+
+```
+titulo: Casa Río
+categoria: residencial
+ubicacion: Nordelta, Buenos Aires
+cliente: privado
+tipologia: vivienda unifamiliar
+superficie: 280 m²
+año: 2023
+```
+
+- `titulo` y `categoria` son especiales (título del proyecto y la
+  palabra que aparece junto al título al pasar el mouse en el home).
+- El resto de las líneas arma la ficha técnica de la página de
+  detalle, en el mismo orden en que están escritas — podés agregar,
+  sacar o renombrar campos como quieras.
+
+## ¿Por qué tarda un minuto en actualizarse?
+
+Cada vez que subís algo a `proyectos`, el sitio se reconstruye solo
+en segundo plano. Podés ver el progreso (por curiosidad, no hace
+falta) en la pestaña "Actions" del repositorio — cuando aparece un
+tilde verde, ya está listo.

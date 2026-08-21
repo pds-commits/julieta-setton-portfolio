@@ -1,0 +1,7 @@
+titulo: Proyecto 04
+categoria: oficinas
+ubicacion: Buenos Aires, Argentina
+cliente: n/a
+tipologia: oficinas corporativas
+superficie: 850 m²
+año: 2024

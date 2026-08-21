@@ -1,0 +1,232 @@
+:root {
+  --gris-texto: #9a9a9a;
+  --gris-texto-oscuro: #6b6b6b;
+  --gris-linea: #e4e4e4;
+  --negro: #1a1a1a;
+  --fuente: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: var(--gris-texto);
+  font-family: var(--fuente);
+  font-weight: 300;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ---------- Nav ---------- */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 40px;
+}
+
+.nav__marca {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--gris-texto);
+}
+
+.nav__marca:hover {
+  color: var(--negro);
+}
+
+/* ---------- Grid del home ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  padding: 0 3px 3px;
+}
+
+.tile {
+  position: relative;
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #f2f2f2;
+}
+
+.tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.tile:hover img {
+  transform: scale(1.03);
+}
+
+.tile__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  background: rgba(20, 20, 20, 0.5);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.tile:hover .tile__overlay {
+  opacity: 1;
+}
+
+.tile__overlay span {
+  color: #f5f5f5;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+}
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tile__overlay {
+    opacity: 1;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0) 60%
+    );
+    align-items: flex-end;
+    padding: 0 20px 18px;
+  }
+}
+
+/* ---------- Página de detalle ---------- */
+
+.detalle {
+  padding: 20px 0 80px;
+}
+
+.carrusel {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 0;
+}
+
+.carrusel__track {
+  display: flex;
+  align-items: center;
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.carrusel__slide {
+  /* alto fijo, ancho automático: cada imagen conserva su propia
+     proporción (cuadrada, vertical, horizontal...) en vez de
+     recortarse a una caja pareja */
+  flex: 0 0 auto;
+  height: 62vh;
+  min-height: 320px;
+  margin: 0 10px;
+  background: #f2f2f2;
+  opacity: 0.4;
+  transition: opacity 0.5s ease;
+}
+
+.carrusel__slide.activa {
+  opacity: 1;
+}
+
+.carrusel__slide img {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+
+.carrusel__nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 22px;
+  padding: 4px 6vw 0;
+}
+
+.carrusel__flecha {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--gris-texto);
+  font-size: 20px;
+  font-family: var(--fuente);
+  padding: 6px;
+  line-height: 1;
+}
+
+.carrusel__flecha:hover {
+  color: var(--negro);
+}
+
+.info {
+  padding: 40px 6vw 0;
+  max-width: 640px;
+}
+
+.info__titulo {
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  color: var(--negro);
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0 0 28px;
+}
+
+.ficha {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ficha__fila {
+  display: flex;
+  gap: 18px;
+  font-size: 14px;
+}
+
+.ficha__etiqueta {
+  width: 110px;
+  flex: none;
+  color: var(--gris-texto);
+  text-transform: lowercase;
+}
+
+.ficha__valor {
+  color: var(--gris-texto-oscuro);
+  text-transform: lowercase;
+}
+
+@media (max-width: 700px) {
+  .carrusel__slide {
+    height: 42vh;
+  }
+  .info {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .carrusel__nav {
+    padding-right: 24px;
+  }
+}

@@ -1,0 +1,150 @@
+// Arma la página de detalle (carrusel + ficha técnica) a partir de
+// PROYECTOS y ETIQUETAS_FICHA (definidos en data.js), leyendo el
+// proyecto pedido desde el query string: proyecto.html?id=xxx
+
+function obtenerProyectoActual() {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  return PROYECTOS.find((p) => p.id === id) || PROYECTOS[0];
+}
+
+function crearCarrusel(proyecto) {
+  let indice = 0;
+
+  const wrapper = document.createElement("div");
+  wrapper.className = "carrusel";
+
+  const track = document.createElement("div");
+  track.className = "carrusel__track";
+
+  const slides = proyecto.imagenes.map((src, i) => {
+    const slide = document.createElement("div");
+    slide.className = "carrusel__slide";
+
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = `${proyecto.titulo} — imagen ${i + 1}`;
+    img.loading = "lazy";
+
+    slide.appendChild(img);
+    slide.addEventListener("click", () => {
+      indice = i;
+      actualizar();
+    });
+
+    track.appendChild(slide);
+    return slide;
+  });
+
+  wrapper.appendChild(track);
+
+  const nav = document.createElement("div");
+  nav.className = "carrusel__nav";
+
+  const btnPrev = document.createElement("button");
+  btnPrev.className = "carrusel__flecha";
+  btnPrev.setAttribute("aria-label", "Imagen anterior");
+  btnPrev.textContent = "←";
+
+  const btnNext = document.createElement("button");
+  btnNext.className = "carrusel__flecha";
+  btnNext.setAttribute("aria-label", "Imagen siguiente");
+  btnNext.textContent = "→";
+
+  nav.appendChild(btnPrev);
+  nav.appendChild(btnNext);
+
+  function actualizar() {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("activa", i === indice);
+    });
+
+    // Cada slide tiene su propio ancho (según la proporción de su
+    // imagen), así que para centrar la activa hay que sumar el ancho
+    // real de todas las anteriores en vez de asumir un paso fijo.
+    let acumulado = 0;
+    for (let i = 0; i < indice; i++) {
+      const rect = slides[i].getBoundingClientRect();
+      const estilo = getComputedStyle(slides[i]);
+      acumulado +=
+        rect.width + parseFloat(estilo.marginLeft) + parseFloat(estilo.marginRight);
+    }
+
+    const slideActual = slides[indice];
+    const anchoActual = slideActual.getBoundingClientRect().width;
+    const margenIzq = parseFloat(getComputedStyle(slideActual).marginLeft);
+    const anchoContenedor = wrapper.getBoundingClientRect().width;
+
+    const offset =
+      anchoContenedor / 2 - (acumulado + margenIzq + anchoActual / 2);
+    track.style.transform = `translateX(${offset}px)`;
+  }
+
+  function ir(delta) {
+    indice = (indice + delta + slides.length) % slides.length;
+    actualizar();
+  }
+
+  btnPrev.addEventListener("click", () => ir(-1));
+  btnNext.addEventListener("click", () => ir(1));
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") ir(-1);
+    if (e.key === "ArrowRight") ir(1);
+  });
+
+  window.addEventListener("resize", actualizar);
+
+  // Espera a que las imágenes tengan tamaño real antes de centrar.
+  window.requestAnimationFrame(actualizar);
+
+  const contenedor = document.createElement("div");
+  contenedor.appendChild(wrapper);
+  contenedor.appendChild(nav);
+  return contenedor;
+}
+
+function crearFicha(proyecto) {
+  const info = document.createElement("div");
+  info.className = "info";
+
+  const titulo = document.createElement("h1");
+  titulo.className = "info__titulo";
+  titulo.textContent = proyecto.titulo;
+  info.appendChild(titulo);
+
+  const ficha = document.createElement("div");
+  ficha.className = "ficha";
+
+  Object.keys(proyecto.ficha).forEach((clave) => {
+    const fila = document.createElement("div");
+    fila.className = "ficha__fila";
+
+    const etiqueta = document.createElement("span");
+    etiqueta.className = "ficha__etiqueta";
+    etiqueta.textContent = `${ETIQUETAS_FICHA[clave] || clave}:`;
+
+    const valor = document.createElement("span");
+    valor.className = "ficha__valor";
+    valor.textContent = proyecto.ficha[clave];
+
+    fila.appendChild(etiqueta);
+    fila.appendChild(valor);
+    ficha.appendChild(fila);
+  });
+
+  info.appendChild(ficha);
+  return info;
+}
+
+function renderDetalle() {
+  const proyecto = obtenerProyectoActual();
+  document.title = `${proyecto.titulo} — Julieta Setton Arquitectura`;
+
+  const contenedor = document.getElementById("detalle");
+  contenedor.innerHTML = "";
+  contenedor.appendChild(crearCarrusel(proyecto));
+  contenedor.appendChild(crearFicha(proyecto));
+}
+
+renderDetalle();
