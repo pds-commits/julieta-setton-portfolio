@@ -119,12 +119,17 @@ const PROYECTOS = [
     "id": "proyecto-5",
     "titulo": "Proyecto 05",
     "categoria": "residencial",
-    "portada": "proyectos/Proyecto_5/imagen_portada.svg",
+    "portada": "proyectos/Proyecto_5/imagen_portada.jpg",
     "imagenes": [
+      "proyectos/Proyecto_5/imagen_carousel_1.jpg",
       "proyectos/Proyecto_5/imagen_carousel_1.svg",
+      "proyectos/Proyecto_5/imagen_carousel_2.jpg",
       "proyectos/Proyecto_5/imagen_carousel_2.svg",
+      "proyectos/Proyecto_5/imagen_carousel_3.jpg",
       "proyectos/Proyecto_5/imagen_carousel_3.svg",
-      "proyectos/Proyecto_5/imagen_carousel_4.svg"
+      "proyectos/Proyecto_5/imagen_carousel_4.jpg",
+      "proyectos/Proyecto_5/imagen_carousel_4.svg",
+      "proyectos/Proyecto_5/imagen_carousel_5.jpg"
     ],
     "ficha": {
       "ubicacion": "Rosario, Argentina",
