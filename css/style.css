@@ -33,13 +33,14 @@ img {
 /* ---------- Nav ---------- */
 
 .nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   padding: 28px 40px;
 }
 
 .nav__marca {
+  justify-self: start;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--gris-texto);
@@ -50,6 +51,7 @@ img {
 }
 
 .nav__links {
+  justify-self: center;
   display: flex;
   gap: 28px;
 }
@@ -66,6 +68,7 @@ img {
 }
 
 .nav__hamburguesa {
+  justify-self: end;
   display: none;
   background: none;
   border: none;
