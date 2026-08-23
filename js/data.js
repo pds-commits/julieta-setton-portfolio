@@ -30,7 +30,8 @@ const PROYECTOS = [
       "proyectos/Proyecto_1/imagen_carousel_10.jpeg",
       "proyectos/Proyecto_1/imagen_carousel_11.jpeg",
       "proyectos/Proyecto_1/imagen_carousel_12.png",
-      "proyectos/Proyecto_1/imagen_carousel_13.png"
+      "proyectos/Proyecto_1/imagen_carousel_13.png",
+      "proyectos/Proyecto_1/imagen_carousel_15.jpg"
     ],
     "ficha": {
       "ubicacion": "Buenos Aires, Argentina",
