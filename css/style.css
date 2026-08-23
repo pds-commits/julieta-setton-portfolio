@@ -132,6 +132,10 @@ img {
 }
 
 @media (max-width: 700px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
   .nav__links {
     display: none;
   }
