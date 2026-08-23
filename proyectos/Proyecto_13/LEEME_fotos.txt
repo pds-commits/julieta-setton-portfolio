@@ -1,0 +1,14 @@
+Nombres de archivo para las fotos de este proyecto:
+
+  imagen_portada.jpg       -> la foto de tapa (se ve en el grid del home)
+  imagen_carousel_1.jpg    -> primera foto del detalle del proyecto
+  imagen_carousel_2.jpg
+  imagen_carousel_3.jpg
+  ...                         (las que quieras, numeradas en orden)
+
+Podés usar .jpg, .jpeg, .png o .webp — no hace falta que sea
+el mismo formato para todas.
+
+Este archivo (LEEME_fotos.txt) y este texto no se muestran en el
+sitio, es solo para vos. Podés borrarlo del proyecto si querés,
+no afecta nada.

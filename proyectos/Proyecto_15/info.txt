@@ -1,0 +1,20 @@
+# Ficha técnica del proyecto.
+# Formato: clave: valor  (una por línea)
+# Las líneas que empiezan con # se ignoran, son solo comentarios.
+#
+# "titulo" y "categoria" son especiales:
+#   - titulo    -> el nombre que se muestra en el sitio
+#   - categoria -> aparece junto al título al pasar el mouse en el home
+#                  (ej: "residencial", "comercial", "hospitality")
+#
+# El resto de las líneas (ubicacion, cliente, etc.) arman la ficha
+# técnica de la página de detalle, en el mismo orden en que están
+# escritas acá. Podés agregar, sacar o renombrar campos libremente.
+
+titulo: Nombre del Proyecto
+categoria: residencial
+ubicacion: Ciudad, Argentina
+cliente: privado
+tipologia: vivienda unifamiliar
+superficie: 000 m²
+año: 2025
