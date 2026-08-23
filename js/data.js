@@ -16,12 +16,22 @@ const PROYECTOS = [
     "id": "proyecto-1",
     "titulo": "Proyecto 01",
     "categoria": "residencial",
-    "portada": "proyectos/Proyecto_1/imagen_portada.svg",
+    "portada": "proyectos/Proyecto_1/imagen_portada.jpeg",
     "imagenes": [
-      "proyectos/Proyecto_1/imagen_carousel_1.svg",
-      "proyectos/Proyecto_1/imagen_carousel_2.svg",
-      "proyectos/Proyecto_1/imagen_carousel_3.svg",
-      "proyectos/Proyecto_1/imagen_carousel_4.svg"
+      "proyectos/Proyecto_1/imagen_carousel_1.jpeg",
+      "proyectos/Proyecto_1/imagen_carousel_2.jpeg",
+      "proyectos/Proyecto_1/imagen_carousel_3.jpeg",
+      "proyectos/Proyecto_1/imagen_carousel_4.jpeg",
+      "proyectos/Proyecto_1/imagen_carousel_5.jpeg",
+      "proyectos/Proyecto_1/imagen_carousel_6.jpeg",
+      "proyectos/Proyecto_1/imagen_carousel_7.jpeg",
+      "proyectos/Proyecto_1/imagen_carousel_8.jpeg",
+      "proyectos/Proyecto_1/imagen_carousel_9.jpeg",
+      "proyectos/Proyecto_1/imagen_carousel_10.jpeg",
+      "proyectos/Proyecto_1/imagen_carousel_11.jpeg",
+      "proyectos/Proyecto_1/imagen_carousel_12.png",
+      "proyectos/Proyecto_1/imagen_carousel_13.png",
+      "proyectos/Proyecto_1/imagen_carousel_15.jpg"
     ],
     "ficha": {
       "ubicacion": "Buenos Aires, Argentina",
@@ -35,12 +45,23 @@ const PROYECTOS = [
     "id": "proyecto-2",
     "titulo": "Proyecto 02",
     "categoria": "comercial",
-    "portada": "proyectos/Proyecto_2/imagen_portada.svg",
+    "portada": "proyectos/Proyecto_2/imagen_portada.jpg",
     "imagenes": [
-      "proyectos/Proyecto_2/imagen_carousel_1.svg",
-      "proyectos/Proyecto_2/imagen_carousel_2.svg",
-      "proyectos/Proyecto_2/imagen_carousel_3.svg",
-      "proyectos/Proyecto_2/imagen_carousel_4.svg"
+      "proyectos/Proyecto_2/imagen_carousel_1.jpg",
+      "proyectos/Proyecto_2/imagen_carousel_2.jpg",
+      "proyectos/Proyecto_2/imagen_carousel_3.jpg",
+      "proyectos/Proyecto_2/imagen_carousel_4.jpg",
+      "proyectos/Proyecto_2/imagen_carousel_5.jpg",
+      "proyectos/Proyecto_2/imagen_carousel_6.jpg",
+      "proyectos/Proyecto_2/imagen_carousel_7.jpg",
+      "proyectos/Proyecto_2/imagen_carousel_8.jpg",
+      "proyectos/Proyecto_2/imagen_carousel_9.jpg",
+      "proyectos/Proyecto_2/imagen_carousel_10.jpg",
+      "proyectos/Proyecto_2/imagen_carousel_11.jpg",
+      "proyectos/Proyecto_2/imagen_carousel_12.jpg",
+      "proyectos/Proyecto_2/imagen_carousel_13.jpg",
+      "proyectos/Proyecto_2/imagen_carousel_14.jpg",
+      "proyectos/Proyecto_2/imagen_carousel_15.jpg"
     ],
     "ficha": {
       "ubicacion": "Córdoba, Argentina",
@@ -73,12 +94,19 @@ const PROYECTOS = [
     "id": "proyecto-4",
     "titulo": "Proyecto 04",
     "categoria": "oficinas",
-    "portada": "proyectos/Proyecto_4/imagen_portada.svg",
+    "portada": "proyectos/Proyecto_4/imagen_portada.jpg",
     "imagenes": [
+      "proyectos/Proyecto_4/imagen_carousel_1.jpg",
       "proyectos/Proyecto_4/imagen_carousel_1.svg",
+      "proyectos/Proyecto_4/imagen_carousel_2.jpg",
       "proyectos/Proyecto_4/imagen_carousel_2.svg",
+      "proyectos/Proyecto_4/imagen_carousel_3.jpg",
       "proyectos/Proyecto_4/imagen_carousel_3.svg",
-      "proyectos/Proyecto_4/imagen_carousel_4.svg"
+      "proyectos/Proyecto_4/imagen_carousel_4.jpg",
+      "proyectos/Proyecto_4/imagen_carousel_4.svg",
+      "proyectos/Proyecto_4/imagen_carousel_5.jpg",
+      "proyectos/Proyecto_4/imagen_carousel_6.jpg",
+      "proyectos/Proyecto_4/imagen_carousel_7.jpg"
     ],
     "ficha": {
       "ubicacion": "Buenos Aires, Argentina",
@@ -92,12 +120,17 @@ const PROYECTOS = [
     "id": "proyecto-5",
     "titulo": "Proyecto 05",
     "categoria": "residencial",
-    "portada": "proyectos/Proyecto_5/imagen_portada.svg",
+    "portada": "proyectos/Proyecto_5/imagen_portada.jpg",
     "imagenes": [
+      "proyectos/Proyecto_5/imagen_carousel_1.jpg",
       "proyectos/Proyecto_5/imagen_carousel_1.svg",
+      "proyectos/Proyecto_5/imagen_carousel_2.jpg",
       "proyectos/Proyecto_5/imagen_carousel_2.svg",
+      "proyectos/Proyecto_5/imagen_carousel_3.jpg",
       "proyectos/Proyecto_5/imagen_carousel_3.svg",
-      "proyectos/Proyecto_5/imagen_carousel_4.svg"
+      "proyectos/Proyecto_5/imagen_carousel_4.jpg",
+      "proyectos/Proyecto_5/imagen_carousel_4.svg",
+      "proyectos/Proyecto_5/imagen_carousel_5.jpg"
     ],
     "ficha": {
       "ubicacion": "Rosario, Argentina",
