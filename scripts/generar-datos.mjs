@@ -6,10 +6,14 @@
     - imagen_portada.jpg          -> foto de tapa (grid del home)
     - imagen_carousel_1.jpg,
       imagen_carousel_2.jpg, ...  -> fotos del carrusel de detalle
-    - info.txt                    -> ficha técnica, formato "clave: valor"
-                                      (titulo y categoria son especiales,
-                                      el resto arma la ficha técnica en
-                                      el mismo orden en que están escritas)
+    - info.txt                    -> ficha técnica. "titulo" y "categoria"
+                                      son especiales (clave: valor,
+                                      obligatorio). El resto de las líneas
+                                      arma la ficha técnica en el mismo
+                                      orden en que están escritas — pueden
+                                      ser "clave: valor" (se muestran con
+                                      etiqueta) o texto suelto sin ":"
+                                      (se muestra igual, sin etiqueta)
 
   /bio/bio.txt          -> texto de la biografía, en párrafos
   /bio/fotos/*.jpg       -> fotos opcionales de la biografía
@@ -82,6 +86,36 @@ function parsearInfo(rutaInfo) {
   return datos;
 }
 
+// Como parsearInfo, pero para la ficha técnica: acepta líneas sin
+// "clave:" (se muestran igual, como texto suelto sin etiqueta) y
+// devuelve una lista ordenada en vez de un objeto, porque puede
+// haber varias líneas sueltas y un objeto no admite claves repetidas.
+function parsearFicha(rutaInfo) {
+  const lineas = [];
+  if (!existsSync(rutaInfo)) return lineas;
+  const contenido = readFileSync(rutaInfo, "utf-8");
+  contenido.split(/\r?\n/).forEach((linea) => {
+    const limpia = linea.trim();
+    if (!limpia || limpia.startsWith("#")) return;
+
+    const idx = limpia.indexOf(":");
+    if (idx === -1) {
+      lineas.push({ clave: "", valor: limpia });
+      return;
+    }
+
+    const clave = limpia.slice(0, idx).trim().toLowerCase();
+    const valor = limpia.slice(idx + 1).trim();
+    if (clave && valor) {
+      lineas.push({ clave, valor });
+    } else {
+      // ej: una línea con ":" que en realidad era texto suelto
+      lineas.push({ clave: "", valor: limpia });
+    }
+  });
+  return lineas;
+}
+
 function leerProyecto(nombreCarpeta) {
   const rutaCarpeta = path.join(CARPETA_PROYECTOS, nombreCarpeta);
   if (!statSync(rutaCarpeta).isDirectory()) return null;
@@ -123,8 +157,19 @@ function leerProyecto(nombreCarpeta) {
   const rutaRel = (archivo) =>
     `proyectos/${nombreCarpeta}/${archivo}`;
 
-  const info = parsearInfo(path.join(rutaCarpeta, "info.txt"));
-  const { titulo, categoria, ...resto } = info;
+  let titulo = null;
+  let categoria = null;
+  const ficha = [];
+
+  parsearFicha(path.join(rutaCarpeta, "info.txt")).forEach(({ clave, valor }) => {
+    if (clave === "titulo") {
+      titulo = valor;
+    } else if (clave === "categoria") {
+      categoria = valor;
+    } else {
+      ficha.push({ clave, valor });
+    }
+  });
 
   return {
     id: slugify(nombreCarpeta),
@@ -132,7 +177,7 @@ function leerProyecto(nombreCarpeta) {
     categoria: categoria || "",
     portada: rutaRel(portadaFinal),
     imagenes: imagenesFinal.map(rutaRel),
-    ficha: resto,
+    ficha,
   };
 }
 

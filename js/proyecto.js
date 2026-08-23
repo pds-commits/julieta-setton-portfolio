@@ -116,20 +116,24 @@ function crearFicha(proyecto) {
   const ficha = document.createElement("div");
   ficha.className = "ficha";
 
-  Object.keys(proyecto.ficha).forEach((clave) => {
+  proyecto.ficha.forEach(({ clave, valor }) => {
     const fila = document.createElement("div");
     fila.className = "ficha__fila";
 
-    const etiqueta = document.createElement("span");
-    etiqueta.className = "ficha__etiqueta";
-    etiqueta.textContent = `${ETIQUETAS_FICHA[clave] || clave}:`;
+    // Las líneas sin "clave:" (texto suelto) se muestran igual, pero
+    // sin la columna de etiqueta.
+    if (clave) {
+      const etiqueta = document.createElement("span");
+      etiqueta.className = "ficha__etiqueta";
+      etiqueta.textContent = `${ETIQUETAS_FICHA[clave] || clave}:`;
+      fila.appendChild(etiqueta);
+    }
 
-    const valor = document.createElement("span");
-    valor.className = "ficha__valor";
-    valor.textContent = proyecto.ficha[clave];
+    const valorEl = document.createElement("span");
+    valorEl.className = "ficha__valor";
+    valorEl.textContent = valor;
 
-    fila.appendChild(etiqueta);
-    fila.appendChild(valor);
+    fila.appendChild(valorEl);
     ficha.appendChild(fila);
   });
 

@@ -33,18 +33,33 @@ const PROYECTOS = [
       "proyectos/Proyecto_1/imagen_carousel_13.png",
       "proyectos/Proyecto_1/imagen_carousel_15.jpg"
     ],
-    "ficha": {
-      "ubicacion": "Buenos Aires, Argentina",
-      "cliente": "privado",
-      "tipologia": "vivienda unifamiliar",
-      "superficie": "320 m²",
-      "año": "2024"
-    }
+    "ficha": [
+      {
+        "clave": "ubicacion",
+        "valor": "Buenos Aires, Argentina"
+      },
+      {
+        "clave": "cliente",
+        "valor": "privado"
+      },
+      {
+        "clave": "tipologia",
+        "valor": "vivienda unifamiliar"
+      },
+      {
+        "clave": "superficie",
+        "valor": "320 m²"
+      },
+      {
+        "clave": "año",
+        "valor": "2024"
+      }
+    ]
   },
   {
     "id": "proyecto-2",
-    "titulo": "Proyecto 02",
-    "categoria": "comercial",
+    "titulo": "PH BOEDO",
+    "categoria": "RESIDENCIAL",
     "portada": "proyectos/Proyecto_2/imagen_portada.jpg",
     "imagenes": [
       "proyectos/Proyecto_2/imagen_carousel_1.jpg",
@@ -61,15 +76,27 @@ const PROYECTOS = [
       "proyectos/Proyecto_2/imagen_carousel_12.jpg",
       "proyectos/Proyecto_2/imagen_carousel_13.jpg",
       "proyectos/Proyecto_2/imagen_carousel_14.jpg",
-      "proyectos/Proyecto_2/imagen_carousel_15.jpg"
+      "proyectos/Proyecto_2/imagen_carousel_15.jpg",
+      "proyectos/Proyecto_2/imagen_carousel_16.jpg"
     ],
-    "ficha": {
-      "ubicacion": "Córdoba, Argentina",
-      "cliente": "n/a",
-      "tipologia": "local comercial",
-      "superficie": "180 m²",
-      "año": "2023"
-    }
+    "ficha": [
+      {
+        "clave": "",
+        "valor": "PH BOEDO"
+      },
+      {
+        "clave": "",
+        "valor": "Proyecto y Direccion de obra junto con Arq. Jeanette Zotta"
+      },
+      {
+        "clave": "",
+        "valor": "Boedo, CABA"
+      },
+      {
+        "clave": "",
+        "valor": "2022"
+      }
+    ]
   },
   {
     "id": "proyecto-3",
@@ -85,13 +112,28 @@ const PROYECTOS = [
       "proyectos/Proyecto_3/imagenes_carousel_6.jpg",
       "proyectos/Proyecto_3/imagenes_carousel_7.jpg"
     ],
-    "ficha": {
-      "ubicacion": "Mendoza, Argentina",
-      "cliente": "privado",
-      "tipologia": "hotel boutique",
-      "superficie": "1200 m²",
-      "año": "2022"
-    }
+    "ficha": [
+      {
+        "clave": "ubicacion",
+        "valor": "Mendoza, Argentina"
+      },
+      {
+        "clave": "cliente",
+        "valor": "privado"
+      },
+      {
+        "clave": "tipologia",
+        "valor": "hotel boutique"
+      },
+      {
+        "clave": "superficie",
+        "valor": "1200 m²"
+      },
+      {
+        "clave": "año",
+        "valor": "2022"
+      }
+    ]
   },
   {
     "id": "proyecto-4",
@@ -107,13 +149,28 @@ const PROYECTOS = [
       "proyectos/Proyecto_4/imagen_carousel_6.jpg",
       "proyectos/Proyecto_4/imagen_carousel_7.jpg"
     ],
-    "ficha": {
-      "ubicacion": "Buenos Aires, Argentina",
-      "cliente": "n/a",
-      "tipologia": "oficinas corporativas",
-      "superficie": "850 m²",
-      "año": "2024"
-    }
+    "ficha": [
+      {
+        "clave": "ubicacion",
+        "valor": "Buenos Aires, Argentina"
+      },
+      {
+        "clave": "cliente",
+        "valor": "n/a"
+      },
+      {
+        "clave": "tipologia",
+        "valor": "oficinas corporativas"
+      },
+      {
+        "clave": "superficie",
+        "valor": "850 m²"
+      },
+      {
+        "clave": "año",
+        "valor": "2024"
+      }
+    ]
   },
   {
     "id": "proyecto-5",
@@ -127,13 +184,28 @@ const PROYECTOS = [
       "proyectos/Proyecto_5/imagen_carousel_4.jpg",
       "proyectos/Proyecto_5/imagen_carousel_5.jpg"
     ],
-    "ficha": {
-      "ubicacion": "Rosario, Argentina",
-      "cliente": "privado",
-      "tipologia": "vivienda unifamiliar",
-      "superficie": "410 m²",
-      "año": "2023"
-    }
+    "ficha": [
+      {
+        "clave": "ubicacion",
+        "valor": "Rosario, Argentina"
+      },
+      {
+        "clave": "cliente",
+        "valor": "privado"
+      },
+      {
+        "clave": "tipologia",
+        "valor": "vivienda unifamiliar"
+      },
+      {
+        "clave": "superficie",
+        "valor": "410 m²"
+      },
+      {
+        "clave": "año",
+        "valor": "2023"
+      }
+    ]
   }
 ];
 

@@ -1,15 +1,18 @@
 # Ficha técnica del proyecto.
-# Formato: clave: valor  (una por línea)
 # Las líneas que empiezan con # se ignoran, son solo comentarios.
 #
-# "titulo" y "categoria" son especiales:
+# "titulo" y "categoria" son obligatorios y van con el formato
+# clave: valor:
 #   - titulo    -> el nombre que se muestra en el sitio
 #   - categoria -> aparece junto al título al pasar el mouse en el home
 #                  (ej: "residencial", "comercial", "hospitality")
 #
-# El resto de las líneas (ubicacion, cliente, etc.) arman la ficha
-# técnica de la página de detalle, en el mismo orden en que están
-# escritas acá. Podés agregar, sacar o renombrar campos libremente.
+# El resto de las líneas arman la ficha técnica de la página de
+# detalle, en el mismo orden en que están escritas acá. Hay 2 formas
+# de escribirlas, y podés mezclarlas como quieras:
+#
+#   1) clave: valor   -> se muestra con la etiqueta ("ubicación: ...")
+#   2) solo el texto  -> se muestra igual, pero sin etiqueta
 
 titulo: Nombre del Proyecto
 categoria: residencial

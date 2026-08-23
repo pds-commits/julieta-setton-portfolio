@@ -59,11 +59,23 @@ superficie: 280 m²
 año: 2023
 ```
 
-- `titulo` y `categoria` son especiales (título del proyecto y la
-  palabra que aparece junto al título al pasar el mouse en el home).
+- `titulo` y `categoria` son obligatorios y van siempre con el
+  formato `clave: valor` (título del proyecto y la palabra que
+  aparece junto al título al pasar el mouse en el home).
 - El resto de las líneas arma la ficha técnica de la página de
-  detalle, en el mismo orden en que están escritas — podés agregar,
-  sacar o renombrar campos como quieras.
+  detalle, en el mismo orden en que están escritas. Hay 2 formas de
+  escribirlas, y se pueden mezclar:
+  - `clave: valor` → se muestra con la etiqueta (ej: `ubicación: ...`)
+  - solo el texto, sin `:` → se muestra igual, pero sin etiqueta
+
+  Por ejemplo, esto también es válido:
+  ```
+  titulo: PH Boedo
+  categoria: residencial
+  Proyecto y dirección de obra junto con Arq. Jeanette Zotta
+  Boedo, CABA
+  2022
+  ```
 
 ## Bio
 
