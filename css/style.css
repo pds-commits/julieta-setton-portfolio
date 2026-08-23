@@ -109,7 +109,6 @@ img {
   font-size: 28px;
   font-weight: 300;
   color: var(--gris-texto);
-  text-transform: lowercase;
 }
 
 .nav__overlay a:hover,
