@@ -2,12 +2,12 @@
   ============================================================
   ARCHIVO GENERADO AUTOMÁTICAMENTE — NO EDITAR A MANO
   ============================================================
-  Se genera a partir de la carpeta /proyectos con
-  scripts/generar-datos.mjs (local, o solo en GitHub vía
+  Se genera a partir de las carpetas /proyectos, /bio y /contacto
+  con scripts/generar-datos.mjs (local, o solo en GitHub vía
   .github/workflows/actualizar-datos.yml en cada push).
 
-  Para cambiar contenido: editá los archivos dentro de
-  /proyectos/<nombre-del-proyecto>/, no este archivo.
+  Para cambiar contenido: editá los archivos dentro de esas
+  carpetas, no este archivo.
   ============================================================
 */
 
@@ -115,4 +115,20 @@ const ETIQUETAS_FICHA = {
   "tipologia": "tipología",
   "superficie": "superficie",
   "año": "año"
+};
+
+const BIO = {
+  "parrafos": [
+    "Escribí acá la biografía de Julieta: su formación, su trayectoria profesional y la mirada que guía su trabajo como arquitecta.",
+    "Podés usar uno o más párrafos — cada uno se muestra por separado, tal como los vayas separando acá con una línea en blanco."
+  ],
+  "fotos": []
+};
+
+const CONTACTO = {
+  "telefono": "+54 9 11 0000-0000",
+  "whatsapp": "+5491100000000",
+  "email": "hola@juliasetton.com",
+  "instagram": "@juliasettonarquitectura",
+  "linkedin": "https://linkedin.com/in/juliasetton"
 };

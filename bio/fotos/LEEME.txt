@@ -1,0 +1,8 @@
+Subí acá las fotos que quieras mostrar en la página de Bio.
+
+Nombralas imagen_1.jpg, imagen_2.jpg, etc. (para mantener el orden;
+cualquier nombre funciona igual, pero numeradas así queda más
+prolijo). Formatos: .jpg, .jpeg, .png o .webp.
+
+Este archivo (LEEME.txt) no se muestra en el sitio, es solo una
+referencia para vos. Podés borrarlo cuando quieras, no afecta nada.

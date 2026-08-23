@@ -1,0 +1,19 @@
+# Datos de contacto del estudio.
+# Formato: clave: valor (una por línea).
+#
+# Claves con ícono y link automático: telefono, whatsapp, email,
+# instagram, linkedin, facebook. Cualquier otra clave que agregues
+# se muestra igual, como texto simple sin ícono.
+#
+# - whatsapp: escribilo con código de país, sin espacios ni guiones
+#   (o con ellos, es lo mismo, se limpia solo). Ej: +5491122223333
+# - instagram / linkedin / facebook: podés poner el @usuario o el
+#   link completo (https://...), lo que te resulte más cómodo.
+# - El orden en que aparecen en la página es el mismo orden en que
+#   están escritas acá — reordená las líneas si querés cambiarlo.
+
+telefono: +54 9 11 0000-0000
+whatsapp: +5491100000000
+email: hola@juliasetton.com
+instagram: @juliasettonarquitectura
+linkedin: https://linkedin.com/in/juliasetton

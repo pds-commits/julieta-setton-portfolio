@@ -1,6 +1,6 @@
 name: Actualizar datos del sitio
 
-# Cada vez que se suben fotos o se edita info.txt dentro de /proyectos,
+# Cada vez que se sube algo dentro de /proyectos, /bio o /contacto,
 # regenera js/data.js y lo commitea. GitHub Pages sirve el repo
 # directamente desde la rama main, así que ese commit ya deja el
 # sitio actualizado (tarda 1-2 minutos en propagarse).
@@ -10,6 +10,8 @@ on:
     branches: [main]
     paths:
       - "proyectos/**"
+      - "bio/**"
+      - "contacto/**"
       - "scripts/generar-datos.mjs"
   workflow_dispatch:
 
@@ -28,7 +30,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Generar js/data.js desde /proyectos
+      - name: Generar js/data.js
         run: node scripts/generar-datos.mjs
 
       - name: Commitear js/data.js si cambió

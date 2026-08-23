@@ -1,9 +1,12 @@
-# Cómo agregar o editar proyectos
+# Cómo editar el sitio
 
 No hace falta saber programar ni pedirle nada a Pablo. Todo se hace desde
-github.com, desde el navegador.
+github.com, desde el navegador. El sitio tiene 3 secciones, cada una con
+su propia carpeta: `proyectos`, `bio` y `contacto`.
 
-## Editar un proyecto que ya existe
+## Proyectos
+
+### Editar un proyecto que ya existe
 
 1. Entrá al repositorio en github.com y abrí la carpeta `proyectos`.
 2. Abrí la carpeta del proyecto que querés cambiar (ej: `Proyecto_1`).
@@ -14,7 +17,7 @@ github.com, desde el navegador.
    `info.txt` → ícono de lápiz (editar) → cambiá el texto → "Commit changes".
 5. Esperá 1 o 2 minutos y refrescá la página del sitio.
 
-## Agregar un proyecto nuevo
+### Agregar un proyecto nuevo
 
 1. Entrá a la carpeta `proyectos` → `_plantilla`.
 2. Copiá esa carpeta entera (podés descargarla y volver a subirla con
@@ -30,7 +33,7 @@ El **orden en que aparecen los proyectos en el home** sigue el orden
 alfabético/numérico de los nombres de carpeta — por eso conviene la
 convención `Proyecto_1`, `Proyecto_2`, `Proyecto_3`...
 
-## Nombres de archivo para las fotos
+### Nombres de archivo para las fotos
 
 | Archivo | Qué es |
 |---|---|
@@ -42,7 +45,7 @@ Podés usar `.jpg`, `.jpeg`, `.png` o `.webp`. No hay límite de fotos en
 el carrusel, y no hace falta que sean todas cuadradas ni del mismo
 tamaño — cada una se muestra con su proporción real.
 
-## El archivo `info.txt`
+### El archivo `info.txt`
 
 Es texto simple, una línea por dato:
 
@@ -62,9 +65,45 @@ año: 2023
   detalle, en el mismo orden en que están escritas — podés agregar,
   sacar o renombrar campos como quieras.
 
+## Bio
+
+Carpeta `bio`:
+
+- `bio.txt` → el texto de la biografía. Escribilo en párrafos,
+  dejando una línea en blanco entre uno y otro — cada bloque se
+  muestra por separado en la página.
+- `fotos/` → opcional. Si subís una o más fotos ahí (`imagen_1.jpg`,
+  `imagen_2.jpg`, ...), aparecen automáticamente arriba del texto. Si
+  no subís ninguna, la página se ve bien igual, solo con el texto.
+
+## Contacto
+
+Carpeta `contacto` → archivo `contacto.txt`, mismo formato que
+`info.txt`:
+
+```
+telefono: +54 9 11 2222-3333
+whatsapp: +5491122223333
+email: hola@juliasetton.com
+instagram: @juliasettonarquitectura
+linkedin: https://linkedin.com/in/juliasetton
+```
+
+- Las claves `telefono`, `whatsapp`, `email`, `instagram`, `linkedin`
+  y `facebook` aparecen con su ícono correspondiente y se convierten
+  en link clickeable automáticamente (whatsapp abre un chat, email
+  abre el mail, etc.). Cualquier otra clave que agregues se muestra
+  igual, como texto simple.
+- `whatsapp`: escribilo con código de país (podés poner espacios o
+  guiones, se limpia solo).
+- `instagram` / `linkedin` / `facebook`: podés poner el `@usuario` o
+  el link completo (`https://...`), lo que te resulte más cómodo.
+- El orden de las líneas en el archivo es el orden en que aparecen
+  en la página.
+
 ## ¿Por qué tarda un minuto en actualizarse?
 
-Cada vez que subís algo a `proyectos`, el sitio se reconstruye solo
-en segundo plano. Podés ver el progreso (por curiosidad, no hace
-falta) en la pestaña "Actions" del repositorio — cuando aparece un
-tilde verde, ya está listo.
+Cada vez que subís algo a `proyectos`, `bio` o `contacto`, el sitio
+se reconstruye solo en segundo plano. Podés ver el progreso (por
+curiosidad, no hace falta) en la pestaña "Actions" del repositorio —
+cuando aparece un tilde verde, ya está listo.

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
-  Genera js/data.js a partir de la carpeta /proyectos.
+  Genera js/data.js a partir de las carpetas /proyectos, /bio y /contacto.
 
   Convención de cada carpeta en /proyectos/<Nombre_Del_Proyecto>/:
     - imagen_portada.jpg          -> foto de tapa (grid del home)
@@ -10,6 +10,11 @@
                                       (titulo y categoria son especiales,
                                       el resto arma la ficha técnica en
                                       el mismo orden en que están escritas)
+
+  /bio/bio.txt          -> texto de la biografía, en párrafos
+  /bio/fotos/*.jpg       -> fotos opcionales de la biografía
+
+  /contacto/contacto.txt -> datos de contacto, formato "clave: valor"
 
   Uso local:  node scripts/generar-datos.mjs
   En CI:      lo corre .github/workflows/actualizar-datos.yml en cada push
@@ -22,6 +27,8 @@ import { fileURLToPath } from "url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const RAIZ = path.resolve(__dirname, "..");
 const CARPETA_PROYECTOS = path.join(RAIZ, "proyectos");
+const CARPETA_BIO = path.join(RAIZ, "bio");
+const CARPETA_CONTACTO = path.join(RAIZ, "contacto");
 const SALIDA = path.join(RAIZ, "js", "data.js");
 
 const EXTENSIONES_IMAGEN = ["jpg", "jpeg", "png", "webp", "svg"];
@@ -118,6 +125,36 @@ function leerProyecto(nombreCarpeta) {
   };
 }
 
+function leerBio() {
+  const rutaTexto = path.join(CARPETA_BIO, "bio.txt");
+  const contenido = existsSync(rutaTexto) ? readFileSync(rutaTexto, "utf-8") : "";
+
+  // Saca las líneas de comentario (#) antes de armar los párrafos.
+  const sinComentarios = contenido
+    .split(/\r?\n/)
+    .filter((linea) => !linea.trim().startsWith("#"))
+    .join("\n");
+
+  const parrafos = sinComentarios
+    .split(/\n\s*\n/)
+    .map((p) => p.trim().replace(/\s+/g, " "))
+    .filter(Boolean);
+
+  const carpetaFotos = path.join(CARPETA_BIO, "fotos");
+  const fotos = existsSync(carpetaFotos)
+    ? readdirSync(carpetaFotos)
+        .filter(esImagen)
+        .sort(compararNatural)
+        .map((f) => `bio/fotos/${f}`)
+    : [];
+
+  return { parrafos, fotos };
+}
+
+function leerContacto() {
+  return parsearInfo(path.join(CARPETA_CONTACTO, "contacto.txt"));
+}
+
 function generar() {
   if (!existsSync(CARPETA_PROYECTOS)) {
     console.error(`No existe la carpeta ${CARPETA_PROYECTOS}`);
@@ -141,26 +178,35 @@ function generar() {
     })
     .filter(Boolean);
 
+  const bio = leerBio();
+  const contacto = leerContacto();
+
   const contenido = `/*
   ============================================================
   ARCHIVO GENERADO AUTOMÁTICAMENTE — NO EDITAR A MANO
   ============================================================
-  Se genera a partir de la carpeta /proyectos con
-  scripts/generar-datos.mjs (local, o solo en GitHub vía
+  Se genera a partir de las carpetas /proyectos, /bio y /contacto
+  con scripts/generar-datos.mjs (local, o solo en GitHub vía
   .github/workflows/actualizar-datos.yml en cada push).
 
-  Para cambiar contenido: editá los archivos dentro de
-  /proyectos/<nombre-del-proyecto>/, no este archivo.
+  Para cambiar contenido: editá los archivos dentro de esas
+  carpetas, no este archivo.
   ============================================================
 */
 
 const PROYECTOS = ${JSON.stringify(proyectos, null, 2)};
 
 const ETIQUETAS_FICHA = ${JSON.stringify(ETIQUETAS_FICHA, null, 2)};
+
+const BIO = ${JSON.stringify(bio, null, 2)};
+
+const CONTACTO = ${JSON.stringify(contacto, null, 2)};
 `;
 
   writeFileSync(SALIDA, contenido, "utf-8");
-  console.log(`✔ js/data.js generado con ${proyectos.length} proyecto(s).`);
+  console.log(
+    `✔ js/data.js generado con ${proyectos.length} proyecto(s), ${bio.parrafos.length} párrafo(s) de bio y ${Object.keys(contacto).length} dato(s) de contacto.`
+  );
 }
 
 generar();

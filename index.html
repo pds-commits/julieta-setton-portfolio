@@ -6,16 +6,32 @@
   <title>Julieta Setton Arquitectura</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body data-pagina="proyectos">
   <header class="nav">
-    <a class="nav__marca" href="index.html">julieta setton arquitectura</a>
+    <a class="nav__marca" href="index.html">Julieta Setton Arquitectura</a>
+
+    <nav class="nav__links" aria-label="Navegación principal">
+      <a href="index.html" data-nav="proyectos">Proyectos</a>
+      <a href="bio.html" data-nav="bio">Bio</a>
+      <a href="contacto.html" data-nav="contacto">Contacto</a>
+    </nav>
+
+    <button class="nav__hamburguesa" id="botonMenu" aria-label="Abrir menú">☰</button>
   </header>
+
+  <div class="nav__overlay" id="menuOverlay">
+    <button class="nav__overlay-cerrar" id="botonCerrarMenu" aria-label="Cerrar menú">✕</button>
+    <a href="index.html" data-nav="proyectos">Proyectos</a>
+    <a href="bio.html" data-nav="bio">Bio</a>
+    <a href="contacto.html" data-nav="contacto">Contacto</a>
+  </div>
 
   <main class="grid" id="grid">
     <!-- Los tiles se generan solos desde js/data.js -->
   </main>
 
   <script src="js/data.js"></script>
+  <script src="js/nav.js"></script>
   <script src="js/home.js"></script>
 </body>
 </html>

@@ -1,0 +1,17 @@
+# Biografía de Julieta.
+#
+# Escribí el texto en párrafos: dejá una línea en blanco entre
+# párrafo y párrafo — cada uno se muestra por separado en la página.
+# Las líneas que empiezan con # (como estas) son comentarios, no se
+# muestran en el sitio. Podés borrarlas o dejarlas, da igual.
+#
+# Fotos: si querés agregar una o más, subilas a la carpeta fotos/
+# (por ejemplo imagen_1.jpg, imagen_2.jpg — numerarlas así mantiene
+# el orden, pero cualquier nombre funciona). Si no subís ninguna,
+# la página se ve bien igual, solo con el texto.
+
+Escribí acá la biografía de Julieta: su formación, su trayectoria
+profesional y la mirada que guía su trabajo como arquitecta.
+
+Podés usar uno o más párrafos — cada uno se muestra por separado,
+tal como los vayas separando acá con una línea en blanco.
