@@ -75,12 +75,15 @@ const PROYECTOS = [
     "id": "proyecto-3",
     "titulo": "Proyecto 03",
     "categoria": "hospitality",
-    "portada": "proyectos/Proyecto_3/imagen_portada.svg",
+    "portada": "proyectos/Proyecto_3/imagenes_portada.jpg",
     "imagenes": [
-      "proyectos/Proyecto_3/imagen_carousel_1.svg",
-      "proyectos/Proyecto_3/imagen_carousel_2.svg",
-      "proyectos/Proyecto_3/imagen_carousel_3.svg",
-      "proyectos/Proyecto_3/imagen_carousel_4.svg"
+      "proyectos/Proyecto_3/imagenes_carousel_1.jpg",
+      "proyectos/Proyecto_3/imagenes_carousel_2.jpg",
+      "proyectos/Proyecto_3/imagenes_carousel_3.jpg",
+      "proyectos/Proyecto_3/imagenes_carousel_4.jpg",
+      "proyectos/Proyecto_3/imagenes_carousel_5.jpg",
+      "proyectos/Proyecto_3/imagenes_carousel_6.jpg",
+      "proyectos/Proyecto_3/imagenes_carousel_7.jpg"
     ],
     "ficha": {
       "ubicacion": "Mendoza, Argentina",
@@ -97,13 +100,9 @@ const PROYECTOS = [
     "portada": "proyectos/Proyecto_4/imagen_portada.jpg",
     "imagenes": [
       "proyectos/Proyecto_4/imagen_carousel_1.jpg",
-      "proyectos/Proyecto_4/imagen_carousel_1.svg",
       "proyectos/Proyecto_4/imagen_carousel_2.jpg",
-      "proyectos/Proyecto_4/imagen_carousel_2.svg",
       "proyectos/Proyecto_4/imagen_carousel_3.jpg",
-      "proyectos/Proyecto_4/imagen_carousel_3.svg",
       "proyectos/Proyecto_4/imagen_carousel_4.jpg",
-      "proyectos/Proyecto_4/imagen_carousel_4.svg",
       "proyectos/Proyecto_4/imagen_carousel_5.jpg",
       "proyectos/Proyecto_4/imagen_carousel_6.jpg",
       "proyectos/Proyecto_4/imagen_carousel_7.jpg"
@@ -123,13 +122,9 @@ const PROYECTOS = [
     "portada": "proyectos/Proyecto_5/imagen_portada.jpg",
     "imagenes": [
       "proyectos/Proyecto_5/imagen_carousel_1.jpg",
-      "proyectos/Proyecto_5/imagen_carousel_1.svg",
       "proyectos/Proyecto_5/imagen_carousel_2.jpg",
-      "proyectos/Proyecto_5/imagen_carousel_2.svg",
       "proyectos/Proyecto_5/imagen_carousel_3.jpg",
-      "proyectos/Proyecto_5/imagen_carousel_3.svg",
       "proyectos/Proyecto_5/imagen_carousel_4.jpg",
-      "proyectos/Proyecto_5/imagen_carousel_4.svg",
       "proyectos/Proyecto_5/imagen_carousel_5.jpg"
     ],
     "ficha": {

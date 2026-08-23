@@ -88,13 +88,15 @@ function leerProyecto(nombreCarpeta) {
 
   const archivos = readdirSync(rutaCarpeta).filter(esImagen);
 
+  // Tolera "imagen_" o "imagenes_" (singular o plural), es un error
+  // tipeo muy natural.
   const archivoPortada = archivos.find((f) =>
-    /^imagen_portada\./i.test(f)
+    /^imagen(es)?_portada\./i.test(f)
   );
 
   const carousel = archivos
     .map((f) => {
-      const m = f.match(/^imagen_carousel_(\d+)\./i);
+      const m = f.match(/^imagen(?:es)?_carousel_(\d+)\./i);
       return m ? { archivo: f, numero: parseInt(m[1], 10) } : null;
     })
     .filter(Boolean)
@@ -105,6 +107,15 @@ function leerProyecto(nombreCarpeta) {
     console.warn(`⚠️  "${nombreCarpeta}" no tiene imagen_portada ni imagen_carousel_N — se omite.`);
     return null;
   }
+
+  // Avisa de archivos que parecen un intento de seguir la convención
+  // pero no calzan del todo (ej: "imagen_carousel_.jpg" sin número).
+  const usados = new Set([archivoPortada, ...carousel]);
+  archivos
+    .filter((f) => !usados.has(f) && /^imagen(es)?_/i.test(f))
+    .forEach((f) =>
+      console.warn(`⚠️  "${nombreCarpeta}/${f}" parece una foto pero el nombre no calza con la convención — se ignora.`)
+    );
 
   const portadaFinal = archivoPortada || carousel[0];
   const imagenesFinal = carousel.length > 0 ? carousel : [portadaFinal];
