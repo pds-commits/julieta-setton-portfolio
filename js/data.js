@@ -226,9 +226,7 @@ const BIO = {
 };
 
 const CONTACTO = {
-  "telefono": "+54 9 11 0000-0000",
-  "whatsapp": "+5491100000000",
-  "email": "hola@juliasetton.com",
-  "instagram": "@juliasettonarquitectura",
-  "linkedin": "https://linkedin.com/in/juliasetton"
+  "whatsapp": "+5491176350337",
+  "email": "julisetton9@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/julieta-setton/"
 };
