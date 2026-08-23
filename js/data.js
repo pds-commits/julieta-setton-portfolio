@@ -206,6 +206,44 @@ const PROYECTOS = [
         "valor": "2023"
       }
     ]
+  },
+  {
+    "id": "proyecto-7",
+    "titulo": "Nombre del Proyecto",
+    "categoria": "residencial",
+    "portada": "proyectos/Proyecto_7/imagen_portada.jpg",
+    "imagenes": [
+      "proyectos/Proyecto_7/imagen_carousel_1.jpg",
+      "proyectos/Proyecto_7/imagen_carousel_2.jpg",
+      "proyectos/Proyecto_7/imagen_carousel_3.jpg",
+      "proyectos/Proyecto_7/imagen_carousel_4.jpg",
+      "proyectos/Proyecto_7/imagen_carousel_5.jpg",
+      "proyectos/Proyecto_7/imagen_carousel_7.jpg",
+      "proyectos/Proyecto_7/imagen_carousel_8.jpg",
+      "proyectos/Proyecto_7/imagen_carousel_9.jpg"
+    ],
+    "ficha": [
+      {
+        "clave": "ubicacion",
+        "valor": "Ciudad, Argentina"
+      },
+      {
+        "clave": "cliente",
+        "valor": "privado"
+      },
+      {
+        "clave": "tipologia",
+        "valor": "vivienda unifamiliar"
+      },
+      {
+        "clave": "superficie",
+        "valor": "000 m²"
+      },
+      {
+        "clave": "año",
+        "valor": "2025"
+      }
+    ]
   }
 ];
 
