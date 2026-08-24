@@ -211,8 +211,8 @@ const PROYECTOS = [
   },
   {
     "id": "proyecto-8",
-    "titulo": "Nombre del Proyecto",
-    "categoria": "residencial",
+    "titulo": "BIEN DE BIEN CAFE",
+    "categoria": "GASTRONOMICO",
     "portada": "proyectos/Proyecto_8/imagen_portada.jpg",
     "imagenes": [
       "proyectos/Proyecto_8/imagen_carousel_1.jpg",
@@ -226,24 +226,16 @@ const PROYECTOS = [
     ],
     "ficha": [
       {
-        "clave": "ubicacion",
-        "valor": "Ciudad, Argentina"
+        "clave": "",
+        "valor": "Proyecto y Dirección de obra por Arq. Julieta Setton y Arq. Jeanette Zotta"
       },
       {
-        "clave": "cliente",
-        "valor": "privado"
+        "clave": "",
+        "valor": "Villa Pueyrredón, CABA"
       },
       {
-        "clave": "tipologia",
-        "valor": "vivienda unifamiliar"
-      },
-      {
-        "clave": "superficie",
-        "valor": "000 m²"
-      },
-      {
-        "clave": "año",
-        "valor": "2025"
+        "clave": "",
+        "valor": "2023"
       }
     ]
   },
