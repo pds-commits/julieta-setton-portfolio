@@ -1,7 +1,6 @@
-titulo: Proyecto 05
-categoria: residencial
-ubicacion: Rosario, Argentina
-cliente: privado
-tipologia: vivienda unifamiliar
-superficie: 410 m²
-año: 2023
+titulo: OLLEROS
+categoria: RESIDENCIAL
+
+Proyecto e Interiorismo por Arq. Julieta Setton y Arq. Jeanette Zotta
+Belgrano, CABA
+2022
