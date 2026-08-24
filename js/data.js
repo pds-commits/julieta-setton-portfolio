@@ -319,6 +319,42 @@ const PROYECTOS = [
         "valor": "2025"
       }
     ]
+  },
+  {
+    "id": "proyecto-10",
+    "titulo": "Nombre del Proyecto",
+    "categoria": "residencial",
+    "portada": "proyectos/Proyecto_10/imagen_portada.jpg",
+    "imagenes": [
+      "proyectos/Proyecto_10/imagen_carousel_1.jpg",
+      "proyectos/Proyecto_10/imagen_carousel_2.jpg",
+      "proyectos/Proyecto_10/imagen_carousel_3.jpg",
+      "proyectos/Proyecto_10/imagen_carousel_4.jpg",
+      "proyectos/Proyecto_10/imagen_carousel_5.jpg",
+      "proyectos/Proyecto_10/imagen_carousel_6.jpg"
+    ],
+    "ficha": [
+      {
+        "clave": "ubicacion",
+        "valor": "Ciudad, Argentina"
+      },
+      {
+        "clave": "cliente",
+        "valor": "privado"
+      },
+      {
+        "clave": "tipologia",
+        "valor": "vivienda unifamiliar"
+      },
+      {
+        "clave": "superficie",
+        "valor": "000 m²"
+      },
+      {
+        "clave": "año",
+        "valor": "2025"
+      }
+    ]
   }
 ];
 
