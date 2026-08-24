@@ -1,7 +1,6 @@
-titulo: Proyecto 03
-categoria: hospitality
-ubicacion: Mendoza, Argentina
-cliente: privado
-tipologia: hotel boutique
-superficie: 1200 m²
-año: 2022
+titulo: CORONEL DIAZ
+categoria: RESIDENCIAL
+
+Proyecto y Dirección de obra por Arq. Julieta Setton, Arq. Jeanette Zotta y Arq. Vanik Margossian
+Palermo, CABA
+2022
