@@ -314,7 +314,7 @@ const PROYECTOS = [
   },
   {
     "id": "proyecto-11",
-    "titulo": "Nombre del Proyecto",
+    "titulo": "Lambare",
     "categoria": "residencial",
     "portada": "proyectos/Proyecto_11/imagen_portada.jpg",
     "imagenes": [
@@ -324,24 +324,16 @@ const PROYECTOS = [
     ],
     "ficha": [
       {
-        "clave": "ubicacion",
-        "valor": "Ciudad, Argentina"
+        "clave": "",
+        "valor": "Proyecto por Arq. Julieta Setton"
       },
       {
-        "clave": "cliente",
-        "valor": "privado"
+        "clave": "",
+        "valor": "Almagro, Capital Federal"
       },
       {
-        "clave": "tipologia",
-        "valor": "vivienda unifamiliar"
-      },
-      {
-        "clave": "superficie",
-        "valor": "000 m²"
-      },
-      {
-        "clave": "año",
-        "valor": "2025"
+        "clave": "",
+        "valor": "En proceso"
       }
     ]
   }
