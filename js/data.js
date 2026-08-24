@@ -286,8 +286,8 @@ const PROYECTOS = [
   },
   {
     "id": "proyecto-10",
-    "titulo": "Nombre del Proyecto",
-    "categoria": "residencial",
+    "titulo": "Vermillion Restaurant",
+    "categoria": "Gastronomico",
     "portada": "proyectos/Proyecto_10/imagen_portada.jpg",
     "imagenes": [
       "proyectos/Proyecto_10/imagen_carousel_1.jpg",
@@ -299,23 +299,15 @@ const PROYECTOS = [
     ],
     "ficha": [
       {
-        "clave": "ubicacion",
-        "valor": "Ciudad, Argentina"
+        "clave": "",
+        "valor": "Proyecto y Seguimiento de obra junto con Estudio Thomas Juul Hansen"
       },
       {
-        "clave": "cliente",
-        "valor": "privado"
+        "clave": "",
+        "valor": "Boston, Estados Unidos"
       },
       {
-        "clave": "tipologia",
-        "valor": "vivienda unifamiliar"
-      },
-      {
-        "clave": "superficie",
-        "valor": "000 m²"
-      },
-      {
-        "clave": "año",
+        "clave": "",
         "valor": "2025"
       }
     ]
