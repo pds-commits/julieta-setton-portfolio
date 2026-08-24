@@ -88,8 +88,8 @@ const PROYECTOS = [
   },
   {
     "id": "proyecto-3",
-    "titulo": "Proyecto 03",
-    "categoria": "hospitality",
+    "titulo": "CORONEL DIAZ",
+    "categoria": "RESIDENCIAL",
     "portada": "proyectos/Proyecto_3/imagenes_portada.jpg",
     "imagenes": [
       "proyectos/Proyecto_3/imagenes_carousel_1.jpg",
@@ -102,23 +102,15 @@ const PROYECTOS = [
     ],
     "ficha": [
       {
-        "clave": "ubicacion",
-        "valor": "Mendoza, Argentina"
+        "clave": "",
+        "valor": "Proyecto y Dirección de obra por Arq. Julieta Setton, Arq. Jeanette Zotta y Arq. Vanik Margossian"
       },
       {
-        "clave": "cliente",
-        "valor": "privado"
+        "clave": "",
+        "valor": "Palermo, CABA"
       },
       {
-        "clave": "tipologia",
-        "valor": "hotel boutique"
-      },
-      {
-        "clave": "superficie",
-        "valor": "1200 m²"
-      },
-      {
-        "clave": "año",
+        "clave": "",
         "valor": "2022"
       }
     ]
