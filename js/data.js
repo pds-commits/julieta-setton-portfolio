@@ -146,8 +146,8 @@ const PROYECTOS = [
   },
   {
     "id": "proyecto-5",
-    "titulo": "Proyecto 05",
-    "categoria": "residencial",
+    "titulo": "OLLEROS",
+    "categoria": "RESIDENCIAL",
     "portada": "proyectos/Proyecto_5/imagen_portada.jpg",
     "imagenes": [
       "proyectos/Proyecto_5/imagen_carousel_1.jpg",
@@ -158,24 +158,16 @@ const PROYECTOS = [
     ],
     "ficha": [
       {
-        "clave": "ubicacion",
-        "valor": "Rosario, Argentina"
+        "clave": "",
+        "valor": "Proyecto e Interiorismo por Arq. Julieta Setton y Arq. Jeanette Zotta"
       },
       {
-        "clave": "cliente",
-        "valor": "privado"
+        "clave": "",
+        "valor": "Belgrano, CABA"
       },
       {
-        "clave": "tipologia",
-        "valor": "vivienda unifamiliar"
-      },
-      {
-        "clave": "superficie",
-        "valor": "410 m²"
-      },
-      {
-        "clave": "año",
-        "valor": "2023"
+        "clave": "",
+        "valor": "2022"
       }
     ]
   },
