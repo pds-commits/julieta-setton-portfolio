@@ -14,8 +14,8 @@
 const PROYECTOS = [
   {
     "id": "proyecto-1",
-    "titulo": "Proyecto 01",
-    "categoria": "residencial",
+    "titulo": "SEAWAY VILLA CONDO",
+    "categoria": "RESIDENCIAL",
     "portada": "proyectos/Proyecto_1/imagen_portada.jpeg",
     "imagenes": [
       "proyectos/Proyecto_1/imagen_carousel_1.jpeg",
@@ -35,24 +35,16 @@ const PROYECTOS = [
     ],
     "ficha": [
       {
-        "clave": "ubicacion",
-        "valor": "Buenos Aires, Argentina"
+        "clave": "",
+        "valor": "Proyecto e Interiorismo con estudio Thomas Juul-Hansen"
       },
       {
-        "clave": "cliente",
-        "valor": "privado"
+        "clave": "",
+        "valor": "Miami, Estados Unidos"
       },
       {
-        "clave": "tipologia",
-        "valor": "vivienda unifamiliar"
-      },
-      {
-        "clave": "superficie",
-        "valor": "320 m²"
-      },
-      {
-        "clave": "año",
-        "valor": "2024"
+        "clave": "",
+        "valor": "2026"
       }
     ]
   },
