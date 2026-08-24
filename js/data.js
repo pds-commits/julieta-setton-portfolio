@@ -117,8 +117,8 @@ const PROYECTOS = [
   },
   {
     "id": "proyecto-4",
-    "titulo": "Proyecto 04",
-    "categoria": "oficinas",
+    "titulo": "TACUARI",
+    "categoria": "RESIDENCIAL",
     "portada": "proyectos/Proyecto_4/imagen_portada.jpg",
     "imagenes": [
       "proyectos/Proyecto_4/imagen_carousel_1.jpg",
@@ -131,24 +131,16 @@ const PROYECTOS = [
     ],
     "ficha": [
       {
-        "clave": "ubicacion",
-        "valor": "Buenos Aires, Argentina"
+        "clave": "",
+        "valor": "Proyecto y Dirección de obra por Arq. Julieta Setton y Arq. Jeanette Zotta"
       },
       {
-        "clave": "cliente",
-        "valor": "n/a"
+        "clave": "",
+        "valor": "San Telmo, CABA"
       },
       {
-        "clave": "tipologia",
-        "valor": "oficinas corporativas"
-      },
-      {
-        "clave": "superficie",
-        "valor": "850 m²"
-      },
-      {
-        "clave": "año",
-        "valor": "2024"
+        "clave": "",
+        "valor": "2022"
       }
     ]
   },
