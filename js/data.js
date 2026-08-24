@@ -74,11 +74,7 @@ const PROYECTOS = [
     "ficha": [
       {
         "clave": "",
-        "valor": "PH BOEDO"
-      },
-      {
-        "clave": "",
-        "valor": "Proyecto y Direccion de obra junto con Arq. Jeanette Zotta"
+        "valor": "Proyecto y Direccion de obra por Arq. Julieta Setton y Arq. Jeanette Zotta"
       },
       {
         "clave": "",
