@@ -173,8 +173,8 @@ const PROYECTOS = [
   },
   {
     "id": "proyecto-7",
-    "titulo": "Nombre del Proyecto",
-    "categoria": "residencial",
+    "titulo": "MODO BARISTA",
+    "categoria": "GASTRONOMICO",
     "portada": "proyectos/Proyecto_7/imagen_portada.jpg",
     "imagenes": [
       "proyectos/Proyecto_7/imagen_carousel_1.jpg",
@@ -188,24 +188,16 @@ const PROYECTOS = [
     ],
     "ficha": [
       {
-        "clave": "ubicacion",
-        "valor": "Ciudad, Argentina"
+        "clave": "",
+        "valor": "Proyecto y Dirección de obra por Arq. Julieta Setton, Arq. Jeanette Zotta y Arq. Sofia Cupioli"
       },
       {
-        "clave": "cliente",
-        "valor": "privado"
+        "clave": "",
+        "valor": "Villa Crespo, CABA"
       },
       {
-        "clave": "tipologia",
-        "valor": "vivienda unifamiliar"
-      },
-      {
-        "clave": "superficie",
-        "valor": "000 m²"
-      },
-      {
-        "clave": "año",
-        "valor": "2025"
+        "clave": "",
+        "valor": "2021"
       }
     ]
   },
