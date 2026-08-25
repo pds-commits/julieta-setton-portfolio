@@ -312,7 +312,7 @@ const PROYECTOS = [
   },
   {
     "id": "proyecto-12",
-    "titulo": "Nombre del Proyecto",
+    "titulo": "Lot 3",
     "categoria": "residencial",
     "portada": "proyectos/Proyecto_12/imagen_portada.jpg",
     "imagenes": [
@@ -324,24 +324,16 @@ const PROYECTOS = [
     ],
     "ficha": [
       {
-        "clave": "ubicacion",
-        "valor": "Ciudad, Argentina"
+        "clave": "",
+        "valor": "Long Island, Nueva York, Estados Unidos"
       },
       {
-        "clave": "cliente",
-        "valor": "privado"
+        "clave": "",
+        "valor": "Proyecto con estudio Thomas Juul-Hansen"
       },
       {
-        "clave": "tipologia",
-        "valor": "vivienda unifamiliar"
-      },
-      {
-        "clave": "superficie",
-        "valor": "000 m²"
-      },
-      {
-        "clave": "año",
-        "valor": "2025"
+        "clave": "",
+        "valor": "En proceso"
       }
     ]
   }
