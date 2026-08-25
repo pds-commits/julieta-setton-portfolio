@@ -66,7 +66,6 @@ const PROYECTOS = [
       "proyectos/Proyecto_2/imagen_carousel_12.jpg",
       "proyectos/Proyecto_2/imagen_carousel_13.jpg",
       "proyectos/Proyecto_2/imagen_carousel_14.jpg",
-      "proyectos/Proyecto_2/imagen_carousel_15.jpg",
       "proyectos/Proyecto_2/imagen_carousel_16.jpg"
     ],
     "ficha": [
