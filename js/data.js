@@ -382,11 +382,11 @@ const ETIQUETAS_FICHA = {
 
 const BIO = {
   "parrafos": [
-    "Soy arquitecta egresada de la UBA y tengo más de 10 años de experiencia en el mundo de la arquitectura y el interiorismo. Trabajé en grandes estudios, donde me formé y me especialicé principalmente en proyectos residenciales y gastronómicos.",
-    "En 2020 decidí empezar mi camino como arquitecta independiente, desarrollando proyectos de principio a fin y acompañando a cada cliente durante todo el proceso.",
-    "En 2022 me mudé a Nueva York, donde durante tres años seguí creciendo y formándome profesionalmente en un estudio de renombre. Esa experiencia me dio una mirada más amplia y una nueva forma de entender el diseño, que hoy traigo conmigo de vuelta a Buenos Aires.",
-    "Soy muy creativa, detallista y disfruto especialmente de trabajar en conjunto con mis clientes, escuchar sus ideas y entender cómo viven para poder crear espacios que realmente los representen.",
-    "¿Tenés un espacio para transformar? Me encantaría conocerlo, entender qué necesitás y diseñar juntos un lugar que se sienta realmente tuyo.",
+    "Arquitecta egresada de la UBA, con más de 10 años de experiencia en arquitectura e interiorismo. Mi recorrido profesional comenzó en grandes estudios, donde trabajé y me especialice en proyectos residenciales y gastronómicos.",
+    "En 2021 inicié mi camino como arquitecta independiente, llevando adelante proyectos de principio a fin y trabajando de manera cercana con cada cliente.",
+    "Después de tres años viviendo y trabajando en Nueva York, volví con una mirada más amplia sobre la arquitectura y el diseño, enriquecida por la experiencia de trabajar en un entorno internacional y por una forma de proyectar más abierta, diversa y contemporánea.",
+    "Hoy, desde Buenos Aires con una mirada propia, con experiencia local e internacional y el objetivo de crear espacios pensados en detalle, con identidad y en sintonía con quienes los habitan.",
+    "Cada proyecto es una oportunidad para transformar un espacio y llevarlo un paso más allá. Si estás pensando en transformar el tuyo, me encantaría conocerlo y trabajar juntos para darle forma.",
     "Escribime!"
   ],
   "fotos": []
