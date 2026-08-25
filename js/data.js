@@ -54,7 +54,6 @@ const PROYECTOS = [
     "portada": "proyectos/Proyecto_2/imagen_portada.jpg",
     "imagenes": [
       "proyectos/Proyecto_2/imagen_carousel_1.jpg",
-      "proyectos/Proyecto_2/imagen_carousel_2.jpg",
       "proyectos/Proyecto_2/imagen_carousel_3.jpg",
       "proyectos/Proyecto_2/imagen_carousel_4.jpg",
       "proyectos/Proyecto_2/imagen_carousel_5.jpg",
