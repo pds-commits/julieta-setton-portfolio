@@ -382,8 +382,11 @@ const ETIQUETAS_FICHA = {
 
 const BIO = {
   "parrafos": [
-    "Escribí acá la biografía de Julieta: su formación, su trayectoria profesional y la mirada que guía su trabajo como arquitecta.",
-    "Podés usar uno o más párrafos — cada uno se muestra por separado, tal como los vayas separando acá con una línea en blanco."
+    "Soy arquitecta egresada de la UBA y tengo más de 10 años de experiencia en el mundo de la arquitectura y el interiorismo. Trabajé en grandes estudios, donde me formé y me especialicé principalmente en proyectos residenciales y gastronómicos.",
+    "En 2020 decidí empezar mi camino como arquitecta independiente, desarrollando proyectos de principio a fin y acompañando a cada cliente durante todo el proceso.",
+    "En 2022 me mudé a Nueva York, donde durante tres años seguí creciendo y formándome profesionalmente en un estudio de renombre. Esa experiencia me dio una mirada más amplia y una nueva forma de entender el diseño, que hoy traigo conmigo de vuelta a Buenos Aires.",
+    "Soy muy creativa, detallista y disfruto especialmente de trabajar en conjunto con mis clientes, escuchar sus ideas y entender cómo viven para poder crear espacios que realmente los representen.",
+    "¿Tenés un espacio para transformar? Me encantaría conocerlo, entender qué necesitás y diseñar juntos un lugar que se sienta realmente tuyo."
   ],
   "fotos": []
 };
