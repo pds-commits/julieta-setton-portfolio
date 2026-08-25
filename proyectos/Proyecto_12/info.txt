@@ -1,23 +1,6 @@
-# Ficha técnica del proyecto.
-# Las líneas que empiezan con # se ignoran, son solo comentarios.
-#
-# "titulo" y "categoria" son obligatorios y van con el formato
-# clave: valor:
-#   - titulo    -> el nombre que se muestra en el sitio
-#   - categoria -> aparece junto al título al pasar el mouse en el home
-#                  (ej: "residencial", "comercial", "hospitality")
-#
-# El resto de las líneas arman la ficha técnica de la página de
-# detalle, en el mismo orden en que están escritas acá. Hay 2 formas
-# de escribirlas, y podés mezclarlas como quieras:
-#
-#   1) clave: valor   -> se muestra con la etiqueta ("ubicación: ...")
-#   2) solo el texto  -> se muestra igual, pero sin etiqueta
-
-titulo: Nombre del Proyecto
+titulo: Lot 3
 categoria: residencial
-ubicacion: Ciudad, Argentina
-cliente: privado
-tipologia: vivienda unifamiliar
-superficie: 000 m²
-año: 2025
+
+Long Island, Nueva York, Estados Unidos
+Proyecto con estudio Thomas Juul-Hansen
+En proceso
