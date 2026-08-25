@@ -29,9 +29,20 @@ su propia carpeta: `proyectos`, `bio` y `contacto`.
    ordenarte).
 4. Subí las fotos y completá `info.txt` como se explica abajo.
 
-El **orden en que aparecen los proyectos en el home** sigue el orden
-alfabético/numérico de los nombres de carpeta — por eso conviene la
-convención `Proyecto_1`, `Proyecto_2`, `Proyecto_3`...
+### El orden de los proyectos en el home
+
+Se controla con el campo `orden` en `info.txt` de cada proyecto (un
+número: 1 = primero). **No hace falta renombrar carpetas para
+reordenar** — alcanza con cambiar ese número:
+
+```
+titulo: Casa Río
+categoria: residencial
+orden: 3
+ubicacion: ...
+```
+
+Los proyectos sin `orden` van al final, por nombre de carpeta.
 
 ### Nombres de archivo para las fotos
 
@@ -52,6 +63,7 @@ Es texto simple, una línea por dato:
 ```
 titulo: Casa Río
 categoria: residencial
+orden: 3
 ubicacion: Nordelta, Buenos Aires
 cliente: privado
 tipologia: vivienda unifamiliar
@@ -62,6 +74,7 @@ año: 2023
 - `titulo` y `categoria` son obligatorios y van siempre con el
   formato `clave: valor` (título del proyecto y la palabra que
   aparece junto al título al pasar el mouse en el home).
+- `orden` es opcional — ver la sección de más abajo.
 - El resto de las líneas arma la ficha técnica de la página de
   detalle, en el mismo orden en que están escritas. Hay 2 formas de
   escribirlas, y se pueden mezclar:

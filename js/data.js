@@ -48,6 +48,119 @@ const PROYECTOS = [
     ]
   },
   {
+    "id": "proyecto-13",
+    "titulo": "Town House",
+    "categoria": "residencial",
+    "portada": "proyectos/Proyecto_13/imagen_portada.jpg",
+    "imagenes": [
+      "proyectos/Proyecto_13/imagen_carousel_1.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_2.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_3.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_4.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_5.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_6.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_7.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_8.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_9.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_10.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_11.jpg"
+    ],
+    "ficha": [
+      {
+        "clave": "",
+        "valor": "Nueva York, Estados Unidos"
+      },
+      {
+        "clave": "",
+        "valor": "Proyecto con estudio Thomas Juul Hansen"
+      },
+      {
+        "clave": "",
+        "valor": "En proceso"
+      }
+    ]
+  },
+  {
+    "id": "proyecto-12",
+    "titulo": "Lot 3",
+    "categoria": "residencial",
+    "portada": "proyectos/Proyecto_12/imagen_portada.jpg",
+    "imagenes": [
+      "proyectos/Proyecto_12/imagen_carousel_1.jpg",
+      "proyectos/Proyecto_12/imagen_carousel_2.jpg",
+      "proyectos/Proyecto_12/imagen_carousel_3.jpg",
+      "proyectos/Proyecto_12/imagen_carousel_4.jpg",
+      "proyectos/Proyecto_12/imagen_carousel_5.jpg"
+    ],
+    "ficha": [
+      {
+        "clave": "",
+        "valor": "Long Island, Nueva York, Estados Unidos"
+      },
+      {
+        "clave": "",
+        "valor": "Proyecto con estudio Thomas Juul-Hansen"
+      },
+      {
+        "clave": "",
+        "valor": "En proceso"
+      }
+    ]
+  },
+  {
+    "id": "proyecto-10",
+    "titulo": "Vermillion Restaurant",
+    "categoria": "Gastronomico",
+    "portada": "proyectos/Proyecto_10/imagen_portada.jpg",
+    "imagenes": [
+      "proyectos/Proyecto_10/imagen_carousel_1.jpg",
+      "proyectos/Proyecto_10/imagen_carousel_2.jpg",
+      "proyectos/Proyecto_10/imagen_carousel_3.jpg",
+      "proyectos/Proyecto_10/imagen_carousel_4.jpg",
+      "proyectos/Proyecto_10/imagen_carousel_5.jpg",
+      "proyectos/Proyecto_10/imagen_carousel_6.jpg"
+    ],
+    "ficha": [
+      {
+        "clave": "",
+        "valor": "Proyecto y Seguimiento de obra junto con Estudio Thomas Juul Hansen"
+      },
+      {
+        "clave": "",
+        "valor": "Boston, Estados Unidos"
+      },
+      {
+        "clave": "",
+        "valor": "2025"
+      }
+    ]
+  },
+  {
+    "id": "proyecto-11",
+    "titulo": "Lambare",
+    "categoria": "residencial",
+    "portada": "proyectos/Proyecto_11/imagen_portada.jpg",
+    "imagenes": [
+      "proyectos/Proyecto_11/imagen_carousel_1.jpg",
+      "proyectos/Proyecto_11/imagen_carousel_2.jpg",
+      "proyectos/Proyecto_11/imagen_carousel_3.jpg"
+    ],
+    "ficha": [
+      {
+        "clave": "",
+        "valor": "Proyecto por Arq. Julieta Setton"
+      },
+      {
+        "clave": "",
+        "valor": "Almagro, Capital Federal"
+      },
+      {
+        "clave": "",
+        "valor": "En proceso"
+      }
+    ]
+  },
+  {
     "id": "proyecto-2",
     "titulo": "PH BOEDO",
     "categoria": "RESIDENCIAL",
@@ -254,119 +367,6 @@ const PROYECTOS = [
       {
         "clave": "",
         "valor": "2021"
-      }
-    ]
-  },
-  {
-    "id": "proyecto-10",
-    "titulo": "Vermillion Restaurant",
-    "categoria": "Gastronomico",
-    "portada": "proyectos/Proyecto_10/imagen_portada.jpg",
-    "imagenes": [
-      "proyectos/Proyecto_10/imagen_carousel_1.jpg",
-      "proyectos/Proyecto_10/imagen_carousel_2.jpg",
-      "proyectos/Proyecto_10/imagen_carousel_3.jpg",
-      "proyectos/Proyecto_10/imagen_carousel_4.jpg",
-      "proyectos/Proyecto_10/imagen_carousel_5.jpg",
-      "proyectos/Proyecto_10/imagen_carousel_6.jpg"
-    ],
-    "ficha": [
-      {
-        "clave": "",
-        "valor": "Proyecto y Seguimiento de obra junto con Estudio Thomas Juul Hansen"
-      },
-      {
-        "clave": "",
-        "valor": "Boston, Estados Unidos"
-      },
-      {
-        "clave": "",
-        "valor": "2025"
-      }
-    ]
-  },
-  {
-    "id": "proyecto-11",
-    "titulo": "Lambare",
-    "categoria": "residencial",
-    "portada": "proyectos/Proyecto_11/imagen_portada.jpg",
-    "imagenes": [
-      "proyectos/Proyecto_11/imagen_carousel_1.jpg",
-      "proyectos/Proyecto_11/imagen_carousel_2.jpg",
-      "proyectos/Proyecto_11/imagen_carousel_3.jpg"
-    ],
-    "ficha": [
-      {
-        "clave": "",
-        "valor": "Proyecto por Arq. Julieta Setton"
-      },
-      {
-        "clave": "",
-        "valor": "Almagro, Capital Federal"
-      },
-      {
-        "clave": "",
-        "valor": "En proceso"
-      }
-    ]
-  },
-  {
-    "id": "proyecto-12",
-    "titulo": "Lot 3",
-    "categoria": "residencial",
-    "portada": "proyectos/Proyecto_12/imagen_portada.jpg",
-    "imagenes": [
-      "proyectos/Proyecto_12/imagen_carousel_1.jpg",
-      "proyectos/Proyecto_12/imagen_carousel_2.jpg",
-      "proyectos/Proyecto_12/imagen_carousel_3.jpg",
-      "proyectos/Proyecto_12/imagen_carousel_4.jpg",
-      "proyectos/Proyecto_12/imagen_carousel_5.jpg"
-    ],
-    "ficha": [
-      {
-        "clave": "",
-        "valor": "Long Island, Nueva York, Estados Unidos"
-      },
-      {
-        "clave": "",
-        "valor": "Proyecto con estudio Thomas Juul-Hansen"
-      },
-      {
-        "clave": "",
-        "valor": "En proceso"
-      }
-    ]
-  },
-  {
-    "id": "proyecto-13",
-    "titulo": "Town House",
-    "categoria": "residencial",
-    "portada": "proyectos/Proyecto_13/imagen_portada.jpg",
-    "imagenes": [
-      "proyectos/Proyecto_13/imagen_carousel_1.jpg",
-      "proyectos/Proyecto_13/imagen_carousel_2.jpg",
-      "proyectos/Proyecto_13/imagen_carousel_3.jpg",
-      "proyectos/Proyecto_13/imagen_carousel_4.jpg",
-      "proyectos/Proyecto_13/imagen_carousel_5.jpg",
-      "proyectos/Proyecto_13/imagen_carousel_6.jpg",
-      "proyectos/Proyecto_13/imagen_carousel_7.jpg",
-      "proyectos/Proyecto_13/imagen_carousel_8.jpg",
-      "proyectos/Proyecto_13/imagen_carousel_9.jpg",
-      "proyectos/Proyecto_13/imagen_carousel_10.jpg",
-      "proyectos/Proyecto_13/imagen_carousel_11.jpg"
-    ],
-    "ficha": [
-      {
-        "clave": "",
-        "valor": "Nueva York, Estados Unidos"
-      },
-      {
-        "clave": "",
-        "valor": "Proyecto con estudio Thomas Juul Hansen"
-      },
-      {
-        "clave": "",
-        "valor": "En proceso"
       }
     ]
   }

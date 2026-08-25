@@ -1,5 +1,6 @@
 titulo: TACUARI
 categoria: RESIDENCIAL
+orden: 8
 
 Proyecto y Dirección de obra por Arq. Julieta Setton y Arq. Jeanette Zotta
 San Telmo, CABA

@@ -1,5 +1,6 @@
 titulo: Lambare
 categoria: residencial
+orden: 5
 
 Proyecto por Arq. Julieta Setton
 Almagro, Capital Federal

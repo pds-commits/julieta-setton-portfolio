@@ -1,5 +1,6 @@
 titulo: BIEN DE BIEN CAFE
 categoria: GASTRONOMICO
+orden: 11
 
 Proyecto y Dirección de obra por Arq. Julieta Setton y Arq. Jeanette Zotta 
 Villa Pueyrredón, CABA

@@ -8,12 +8,17 @@
       imagen_carousel_2.jpg, ...  -> fotos del carrusel de detalle
     - info.txt                    -> ficha técnica. "titulo" y "categoria"
                                       son especiales (clave: valor,
-                                      obligatorio). El resto de las líneas
-                                      arma la ficha técnica en el mismo
-                                      orden en que están escritas — pueden
-                                      ser "clave: valor" (se muestran con
-                                      etiqueta) o texto suelto sin ":"
-                                      (se muestra igual, sin etiqueta)
+                                      obligatorio). "orden" es opcional
+                                      (un número: en qué posición del
+                                      home aparece este proyecto — los
+                                      que no tienen "orden" van al final,
+                                      por nombre de carpeta). El resto de
+                                      las líneas arma la ficha técnica en
+                                      el mismo orden en que están
+                                      escritas — pueden ser "clave: valor"
+                                      (se muestran con etiqueta) o texto
+                                      suelto sin ":" (se muestra igual,
+                                      sin etiqueta)
 
   /bio/bio.txt          -> texto de la biografía, en párrafos
   /bio/fotos/*.jpg       -> fotos opcionales de la biografía
@@ -159,6 +164,7 @@ function leerProyecto(nombreCarpeta) {
 
   let titulo = null;
   let categoria = null;
+  let orden = null;
   const ficha = [];
 
   parsearFicha(path.join(rutaCarpeta, "info.txt")).forEach(({ clave, valor }) => {
@@ -166,6 +172,9 @@ function leerProyecto(nombreCarpeta) {
       titulo = valor;
     } else if (clave === "categoria") {
       categoria = valor;
+    } else if (clave === "orden") {
+      const numero = parseInt(valor, 10);
+      if (!Number.isNaN(numero)) orden = numero;
     } else {
       ficha.push({ clave, valor });
     }
@@ -175,6 +184,7 @@ function leerProyecto(nombreCarpeta) {
     id: slugify(nombreCarpeta),
     titulo: titulo || tituloDesdeCarpeta(nombreCarpeta),
     categoria: categoria || "",
+    orden, // solo se usa para ordenar en generar(); no se manda al sitio
     portada: rutaRel(portadaFinal),
     imagenes: imagenesFinal.map(rutaRel),
     ficha,
@@ -223,7 +233,7 @@ function generar() {
     .filter((f) => statSync(path.join(CARPETA_PROYECTOS, f)).isDirectory())
     .sort(compararNatural);
 
-  const proyectos = carpetas
+  const leidos = carpetas
     .map((carpeta) => {
       try {
         return leerProyecto(carpeta);
@@ -233,6 +243,17 @@ function generar() {
       }
     })
     .filter(Boolean);
+
+  // Los proyectos con "orden" en su info.txt van primero, ordenados por
+  // ese número. Los que no lo tienen van después, en el orden en que
+  // ya estaban (por nombre de carpeta) — así no hace falta ponerle
+  // "orden" a todos, solo a los que querés reordenar.
+  const conOrden = leidos
+    .filter((p) => p.orden !== null)
+    .sort((a, b) => a.orden - b.orden);
+  const sinOrden = leidos.filter((p) => p.orden === null);
+
+  const proyectos = [...conOrden, ...sinOrden].map(({ orden, ...resto }) => resto);
 
   const bio = leerBio();
   const contacto = leerContacto();

@@ -1,5 +1,6 @@
 titulo: COCINA UGAB COLEGIO ARMENIO
 categoria: GASTRONOMICO
+orden: 12
 
 Proyecto y Dirección de obra por Arq. Julieta Setton, Arq. Jeanette Zotta y Arq. Vanik Margossian
 Palermo, CABA

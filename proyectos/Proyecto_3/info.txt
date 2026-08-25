@@ -1,5 +1,6 @@
 titulo: CORONEL DIAZ
 categoria: RESIDENCIAL
+orden: 7
 
 Proyecto y Dirección de obra por Arq. Julieta Setton, Arq. Jeanette Zotta y Arq. Vanik Margossian
 Palermo, CABA
