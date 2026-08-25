@@ -336,6 +336,39 @@ const PROYECTOS = [
         "valor": "En proceso"
       }
     ]
+  },
+  {
+    "id": "proyecto-13",
+    "titulo": "Town House",
+    "categoria": "residencial",
+    "portada": "proyectos/Proyecto_13/imagen_portada.jpg",
+    "imagenes": [
+      "proyectos/Proyecto_13/imagen_carousel_1.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_2.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_3.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_4.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_5.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_6.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_7.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_8.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_9.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_10.jpg",
+      "proyectos/Proyecto_13/imagen_carousel_11.jpg"
+    ],
+    "ficha": [
+      {
+        "clave": "",
+        "valor": "Nueva York, Estados Unidos"
+      },
+      {
+        "clave": "",
+        "valor": "Proyecto con estudio Thomas Juul Hansen"
+      },
+      {
+        "clave": "",
+        "valor": "En proceso"
+      }
+    ]
   }
 ];
 
